@@ -30,4 +30,4 @@ jobs:
         run: test -z $(go fmt ./...)
 
       - name: Run staticcheck
-        run: domnikh/staticcheck-action
+        run: dominikh/staticcheck-action
