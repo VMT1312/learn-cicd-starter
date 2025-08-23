@@ -23,7 +23,7 @@ func TestGetApiKey(t *testing.T) {
 		},
 		"malformed authorization header": {
 			key:       "Authorization",
-			value:     "",
+			value:     "-",
 			expectErr: errors.New("malformed authorization header"),
 		},
 		"header with only bearer": {
