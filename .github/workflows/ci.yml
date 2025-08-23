@@ -26,8 +26,8 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Check out code
-        uses: actions/checkout@v4
-
       - name: Run go fmt
         run: test -z $(go fmt ./...)
+
+      - name: Run staticcheck
+        run: domnikh/staticcheck-action
