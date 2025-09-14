@@ -42,4 +42,4 @@ jobs:
           --image us-central1-docker.pkg.dev/notely-470910/notely-ar-repo/notely:latest \
           --region us-central1 \
           --project notely-470910 \
-          --max-instances=4
+          --max-instances 4
